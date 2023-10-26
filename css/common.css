@@ -1,0 +1,66 @@
+/* 鼠标全选颜色 */
+::-moz-selection{background:#fff; color:#888;}
+::selection {background:#fff; color:#888;}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+  }
+  .fonts{
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+span{
+    font-family: Garamond, serif;
+    font-size: 53px;
+    font-weight: 500;
+    letter-spacing: 3.7px;
+}
+h6{
+    font-size: 16px;
+    font-family: Garamond, serif;
+    color: #bbb;
+}
+
+
+.standard {
+    position: relative;
+    margin: 0 12px;
+}
+.division{
+    height: 130px;
+}
+.time{
+    font-size: 14px;
+    color: #A5A5A5;
+    margin-top: 40px;
+}
+.line{
+    margin-top: 5px;
+    width: 34px;
+    height: 1px;
+    background-color: #dbcca8;
+}

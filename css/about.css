@@ -1,0 +1,160 @@
+
+.title {
+    position: relative;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+}
+
+.tle_left {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    left: 7vw;
+}
+
+.tle_left p {
+    color: #999;
+}
+
+.tle_right {
+    position: absolute;
+    width: 38%;
+    height: 50%;
+    top: 25%;
+    right: 0;
+    font-size: 0;
+}
+
+.tle_nav {
+    display: inline-block;
+    width: 5vw;
+    height: 70%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.tle_nav a span {
+    display: block;
+    margin-top: 10%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tle_nav a p {
+    display: block;
+    margin-top: 10%;
+    font-size: 12px;
+}
+
+/* content模块 */
+.content {
+    width: 100%;
+    height: 200vh;
+}
+
+.ct_line {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.ct_line2 {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    font-size: 0;
+}
+
+.ct_line :first-child {
+    margin-left: 0;
+}
+
+.ct_line2 :first-child {
+    margin-left: 0;
+}
+
+.ct_model {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+    box-shadow: 4px 6px 8px #bbb;
+    border-radius: 2%;
+    font-size: 16px;
+}
+
+.ct_img1 {
+    width: 100%;
+    height: 40%;
+    background: url(../img/ABOUT/01_philosophy.jpg) no-repeat;
+    background-size: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+.ct_img2 {
+    width: 100%;
+    height: 40%;
+    background: url(../img/ABOUT/02_company.jpg) no-repeat;
+    background-size: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+.ct_img3 {
+    width: 100%;
+    height: 40%;
+    background: url(../img/ABOUT/03_joinus.jpg) no-repeat;
+    background-size: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+.ct_img4 {
+    width: 100%;
+    height: 40%;
+    background: url(../img/ABOUT/04_contactus.jpg) no-repeat;
+    background-size: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+.ct_img5 {
+    width: 100%;
+    height: 40%;
+    background: url(../img/ABOUT/05_policy.jpg) no-repeat;
+    background-size: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+
+.ct_title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 22px;
+    font-family: Garamond, serif;
+    letter-spacing: 0.05em;
+}
+
+.ct_stitle {
+    position: absolute;
+    top: 56%;
+    left: 15%;
+    font-size: 14px;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    color: #bfb3a2;
+}
+.ct_content{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-family: Garamond, serif;
+    color: #565656;
+}

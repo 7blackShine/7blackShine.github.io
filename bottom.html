@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common2.css">
+    <title>select-HORIZON</title>
+    <style>
+        .bottom {
+            position: relative;
+            height: 78vh;
+            background-color: #161616;
+        }
+
+        .bottom_box {
+            width: 80vw;
+            transform: translate(10vw, 15vh);
+        }
+
+        .bottom-left {
+            float: left;
+            width: 70%;
+        }
+        .bottom-left div{
+            float: left;
+            width: 20%;
+            height: 30vh;
+            margin-right: 10%;
+        }
+        .bottom-left div span{
+            font-size: 23px;
+            color: #fff;
+        }
+        .bottom-left div h6{
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #cdb99c;
+        }
+        
+        .bottom-left div p{
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.2);
+        }
+        .bottom-right {
+            float: right;
+            width: 30%;
+            box-sizing: border-box;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .address {
+            width: 80%;
+            height: 30vh;
+            margin-left: 20%;
+        }
+
+        .address span {
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .address p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: 'Avenir LT W01_35 Light1475496';
+            letter-spacing: 0.05em;
+            line-height: 10px;
+            margin-top: 15px;
+        }
+        .address :nth-child(5){
+            margin-top: 30px;
+        }
+        /* 底部导航 */
+        .bottom_btm {
+            width: 80vw;
+            height: 10vh;
+            transform: translate(10vw, 38vh);
+        }
+
+        .sign {
+            float: left;
+            width: 50%;
+            height: 10vh;
+        }
+
+        .sign span {
+            font-size: 12px;
+            font-family: arial, sans-serif;
+            opacity: 0.35;
+            line-height: 2;
+            color: #fff;
+        }
+
+        .social {
+            float: right;
+            width: 20%;
+            height: 10vh;
+        }
+
+        .social li {
+            display: inline-block;
+            margin-right: 5px;
+            width: 54px;
+            height: 54px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+
+            font-family: "iconfont" !important;
+            font-size: 30px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            text-align: center;
+            line-height: 54px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .social li:hover {
+            color: #111;
+            background-color: #fff;
+        }
+
+        .social :first-child {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部导航模块 -->
+    <div class="head">
+        <div class="head_box">
+            <div class="nav_box">
+                <div class="nav_btn">
+                    <a href="#">分类</a>
+                    <a href="#">服务</a>
+                    <a href="#">关于</a>
+                </div>
+                <div class="nav_btm">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+            </div>
+            <div class="more_box">
+                <a href="#">&#xe60d;</a>
+            </div>
+            <div class="logo">
+                <a href="#"></a>
+                <span>Horizon</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航模块扩展 -->
+    <div class="standard">
+        <div class="over_nav">
+            <div class="on_left">
+                <div>
+                    <p>分类</p>
+                    <h6>select</h6>
+                </div>
+            </div>
+            <div class="on_mid"></div>
+            <div class="on_right"></div>
+        </div>
+        <div class="over_nav">
+            <div class="on_left">
+                <div>
+                    <p>服务</p>
+                    <h6>server</h6>
+                </div>
+            </div>
+            <div class="on_mid"></div>
+            <div class="on_right"></div>
+        </div>
+        <div class="over_nav">
+            <div class="on_left">
+                <div>
+                    <p>关于</p>
+                    <h6>about</h6>
+                </div>
+            </div>
+            <div class="on_mid"></div>
+            <div class="on_right"></div>
+        </div>
+    </div>
+    <script src="../视界Horizon/js/common.js"></script>
+    <!-- 底部模块 -->
+    <div class="bottom">
+        <div class="bottom_box">
+            <div class="bottom-left">
+                <div class="btm_nav_one">
+                    <span>SERVICE</span><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a>
+                </div>
+                <div class="btm_nav_two">
+                    <span>ABOUT US</span><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a>
+                </div>
+                <div class="btm_nav_three">
+                    <span>INFORMATION</span><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a><br>
+                    <a href="#"><h6 class="fonts">&#xe62b;</h6><p>About</p></a>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="address">
+                    <span>Horizon</span>
+                    <p>
+                        250000
+                    </p>
+                    <p>
+                        Lixia-qu
+                    </p>
+                    <p>
+                        Jinan-shi, Shandong-sheng
+                    </p>
+                    <p>
+                        Tel.18553935554
+                    </p>
+                    <p>
+                        z504387026@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部导航 -->
+        <div class="bottom_btm">
+            <div class="sign">
+                <span>©2021 Horizon</span><br>
+                <span>All Right Reserved</span>
+            </div>
+            <div class="social">
+                <a href="#"></a>
+                <li>&#xe69a;</li></a>
+                <a href="#"></a>
+                <li>&#xe62e;</li></a>
+                <a href="#"></a>
+                <li>&#xe608;</li></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

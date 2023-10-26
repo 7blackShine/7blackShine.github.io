@@ -1,0 +1,325 @@
+.head {
+    margin: 0 12px;
+    animation: start 2s forwards;
+}
+
+/*开始动画*/
+@keyframes start {
+    0% {
+        height: 100vh;
+    }
+
+    60% {
+        height: 20px;
+    }
+
+    70% {
+        height: 20px;
+    }
+
+    100% {
+        height: 169px;
+    }
+}
+
+@keyframes start2 {
+    0% {
+        visibility: hidden;
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+}
+
+.head_box {
+    width: 1397px;
+    margin: 0 auto;
+    visibility: hidden;
+    animation: start2 1s forwards 2s;
+}
+
+.nav_box {
+    float: left;
+    width: 318px;
+    height: 169px;
+}
+
+.nav_btn {
+    font-size: 0;
+}
+
+.nav_btn a {
+    display: inline-block;
+    width: 55px;
+    margin-left: 51px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 169px;
+}
+
+.nav_btn a:hover {
+    color: rgb(179, 179, 179);
+}
+
+.nav_btm {
+    position: relative;
+    font-size: 0;
+}
+
+.nav_btm li {
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #000;
+}
+
+.nav_btm :first-child {
+    left: 51px;
+}
+
+.nav_btm :nth-child(2) {
+    left: 157px;
+}
+
+.nav_btm :last-child {
+    left: 263px;
+}
+
+/*导航按钮动画*/
+@keyframes nav_btm {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 55px;
+    }
+}
+
+@keyframes nav_btm2 {
+    0% {
+        width: 55px;
+    }
+
+    100% {
+        width: 0px;
+    }
+}
+
+/*导航栏logo模块*/
+.logo {
+    width: 404px;
+    height: 169px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 169px;
+    cursor: pointer;
+}
+
+/*导航栏更多模块*/
+.more_box {
+    float: right;
+    width: 200px;
+    height: 169px;
+    text-align: center;
+    line-height: 169px;
+    vertical-align: top;
+}
+
+.more_box a {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 头部导航模块扩展 */
+.over_nav {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    font-size: 0;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px 6px 8px -5px rgba(0,0,0,0.2);
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+}
+
+.over_nav div {
+    position: absolute;
+}
+
+.on_left {
+    width: 33%;
+    height: 80%;
+    top: 10%;
+}
+
+.on_mid {
+    width: 34%;
+    height: 80%;
+    left: 33%;
+    top: 10%;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.on_right {
+    width: 33%;
+    height: 80%;
+    left: 67%;
+    top: 10%;
+}
+
+.on_left div {
+    margin-left: 40%;
+}
+
+.on_left div p {
+    font-size: 26px;
+}
+/* 底部模块 */
+.bottom {
+    position: relative;
+    height: 78vh;
+    background-color: #161616;
+}
+
+.bottom_box {
+    width: 80vw;
+    transform: translate(10vw, 15vh);
+}
+
+.bottom-left {
+    float: left;
+    width: 70%;
+}
+.bottom-left div{
+    float: left;
+    width: 20%;
+    height: 30vh;
+    margin-right: 10%;
+}
+.bottom-left div span{
+    font-size: 23px;
+    color: #fff;
+}
+.bottom-left div h6{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #cdb99c;
+}
+
+.bottom-left div p{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+}
+.bottom-right {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.address {
+    width: 80%;
+    height: 30vh;
+    margin-left: 20%;
+}
+
+.address span {
+    font-size: 32px;
+    color: #fff;
+}
+
+.address p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'Avenir LT W01_35 Light1475496';
+    letter-spacing: 0.05em;
+    line-height: 10px;
+    margin-top: 15px;
+}
+.address :nth-child(5){
+    margin-top: 30px;
+}
+/* 底部导航 */
+.bottom_btm {
+    width: 80vw;
+    height: 10vh;
+    transform: translate(10vw, 38vh);
+}
+
+.sign {
+    float: left;
+    width: 50%;
+    height: 10vh;
+}
+
+.sign span {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    opacity: 0.35;
+    line-height: 2;
+    color: #fff;
+}
+
+.social {
+    float: right;
+    width: 20%;
+    height: 10vh;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 5px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-align: center;
+    line-height: 54px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social li:hover {
+    color: #111;
+    background-color: #fff;
+}
+
+.social :first-child {
+    margin-right: 5px;
+}
+/* 图片动画 */
+@keyframes plus{
+    0%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 120%;
+    }
+}
+@keyframes narrow{
+    0%{
+        background-size: 120%
+    }
+    100%{
+        background-size: 100%
+    }
+}

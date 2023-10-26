@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <title>index</title>
+    <style>
+        .head {
+            margin: 0 12px;
+            animation: start 2s forwards;
+        }
+
+        /*开始动画*/
+        @keyframes start {
+            0% {
+                height: 100vh;
+            }
+
+            60% {
+                height: 20px;
+            }
+
+            70% {
+                height: 20px;
+            }
+
+            100% {
+                height: 169px;
+            }
+        }
+
+        @keyframes start2 {
+            0% {
+                visibility: hidden;
+                transform: translate(0, 10px);
+            }
+
+            100% {
+                visibility: visible;
+                transform: translate(0, 0);
+            }
+        }
+
+        .head_box {
+            width: 1397px;
+            margin: 0 auto;
+            visibility: hidden;
+            animation: start2 1s forwards 2s;
+        }
+
+        .nav_box {
+            float: left;
+            width: 318px;
+            height: 169px;
+        }
+
+        .nav_btn {
+            font-size: 0;
+        }
+
+        .nav_btn a {
+            display: inline-block;
+            width: 55px;
+            margin-left: 51px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 169px;
+        }
+
+        .nav_btn a:hover {
+            color: rgb(179, 179, 179);
+        }
+
+        .nav_btm {
+            position: relative;
+            font-size: 0;
+        }
+
+        .nav_btm li {
+            position: absolute;
+            width: 0px;
+            height: 3px;
+            background-color: #000;
+        }
+
+        .nav_btm :first-child {
+            left: 51px;
+        }
+
+        .nav_btm :nth-child(2) {
+            left: 157px;
+        }
+
+        .nav_btm :last-child {
+            left: 263px;
+        }
+
+        /*导航按钮动画*/
+        @keyframes nav_btm {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 55px;
+            }
+        }
+
+        @keyframes nav_btm2 {
+            0% {
+                width: 55px;
+            }
+
+            100% {
+                width: 0px;
+            }
+        }
+
+        /*导航栏logo模块*/
+        .logo {
+            width: 404px;
+            height: 169px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 169px;
+        }
+
+        /*导航栏更多模块*/
+        .more_box {
+            float: right;
+            width: 200px;
+            height: 169px;
+            text-align: center;
+            line-height: 169px;
+            vertical-align: top;
+        }
+
+        .more_box a {
+            font-family: "iconfont" !important;
+            font-size: 30px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部导航模块 -->
+    <div class="head">
+        <div class="head_box">
+            <div class="nav_box">
+                <div class="nav_btn">
+                    <a href="#">日志</a>
+                    <a href="#">服务</a>
+                    <a href="#">关于</a>
+                </div>
+                <div class="nav_btm">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+            </div>
+            <div class="more_box">
+                <a href="#">&#xe60d;</a>
+            </div>
+            <div class="logo">
+                <a href="#"></a>
+                <span>Horizon</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nav_box = document.querySelector(".nav_btn");
+        var nav_btn = nav_box.querySelectorAll("a");
+        var nav_btm = document.querySelector(".nav_btm");
+        var nav_lis = nav_btm.querySelectorAll("li");
+
+        for (var i = 0; i < nav_btn.length; i++) {
+            nav_btn[i].setAttribute('index', i)
+            nav_btn[i].onmouseover = function () {
+                var index = this.getAttribute('index');
+                nav_lis[index].style.animation = "nav_btm 0.7s forwards";
+            }
+            nav_btn[i].onmouseout = function () {
+                var index = this.getAttribute('index');
+                nav_lis[index].style.animation = "nav_btm2 0.5s forwards";
+            }
+        }
+    </script>
+</body>
+
+</html>

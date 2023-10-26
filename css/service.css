@@ -1,0 +1,183 @@
+
+.title {
+    position: relative;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+}
+
+.tle_left {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    left: 7vw;
+}
+
+.tle_left p {
+    color: #999;
+}
+
+.tle_right {
+    position: absolute;
+    width: 38%;
+    height: 50%;
+    top: 25%;
+    right: 0;
+    font-size: 0;
+}
+
+.tle_nav {
+    display: inline-block;
+    width: 5vw;
+    height: 70%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.tle_nav a span {
+    display: block;
+    margin-top: 10%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tle_nav a p {
+    display: block;
+    margin-top: 10%;
+    font-size: 12px;
+}
+
+/* background module */
+.para_img {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/SERVICE/main.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0 10%;
+}
+/* content module */
+.content{
+    width: 100%;
+    height: 120vh;
+}
+.ct_left{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.ct_left span{
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 30%;
+    color: #555;
+    font-size: 32px;
+    font-weight: 600;
+}
+.ct_left div{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: #aaa;
+}
+.ct_right{
+    float: right;
+    width: 40%;
+    height: 100%;
+    margin-right: 10%;
+}
+.ct_right :first-child{
+    display: block;
+    margin-top: 30%;
+}
+.ct_right p{
+    font-size: 18px;
+    font-family: Garamond, serif;
+    line-height: 50px;
+}
+/* select module */
+.select{
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-color: #FAFAFA;
+}
+.sel_box{
+    position: absolute;
+    width: 90vw;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    margin-left: -45vw;
+    font-size: 0;
+    background-color: #fff;
+}
+.sel_box div{
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    height: 80%;
+    margin-top: 5%;
+    font-size: 16px;
+}
+.select .sel_box :nth-child(2){
+    width: 34%;
+    box-sizing: border-box;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.sel_box div .sel_img{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    border-radius: 100%;
+    background-color: #555;
+}
+.select .sel_box :nth-child(1) div{
+    background: url(../img/SERVICE/01_media.jpg) no-repeat;
+    background-size: 100%;
+}
+.select .sel_box :nth-child(2) div{
+    background: url(../img/SERVICE/02_production.jpg);
+    background-size: 100%;
+}
+.select .sel_box :nth-child(3) div{
+    background: url(../img/SERVICE/03_works.jpg);
+    background-size: 100%;
+}
+.sel_box div .sel_head{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 310px;
+    font-size: 26px;
+    font-family: Garamond, serif;
+    text-align: center;
+}
+.sel_box div .sel_head2{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 360px;
+    font-size: 16px;
+    font-family: Garamond, serif;
+    text-align: center;
+    color: #B3A587;
+}
+
+.sel_box div .sel_head3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 460px;
+    font-size: 16px;
+    font-family: Garamond, serif;
+    text-align: center;
+}

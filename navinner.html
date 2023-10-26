@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .navinner {
+            position: relative;
+            font-size: 0;
+            background-color: rgb(22, 22, 22);
+        }
+
+        .navinner_left {
+            position: relative;
+            width: 525px;
+            height: 100vh;
+        }
+
+        .navinner_left li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 525px;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: 525px 100vh;
+            opacity: 0;
+        }
+
+        .navinner_left :first-child {
+            background-image: url(img/内部导航/1.jpg);
+            opacity: 0.4;
+        }
+
+        .navinner_left :nth-child(2) {
+            background-image: url(img/内部导航/2.jpg);
+        }
+
+        .navinner_left :nth-child(3) {
+            background-image: url(img/内部导航/3.jpg);
+        }
+
+        .navinner_left :nth-child(4) {
+            background-image: url(img/内部导航/4.jpg);
+        }
+
+        .navinner_left :last-child {
+            background-image: url(img/内部导航/5.jpg);
+        }
+
+        @keyframes navinner_out {
+            50% {
+                opacity: 0.1;
+            }
+
+            100% {
+                width: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes navinner_in {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 525px;
+                opacity: 0.4;
+            }
+        }
+
+        .navinner_right {
+            position: absolute;
+            top: 0;
+            left: 725px;
+            height: 100vh;
+        }
+
+        /*选择装饰*/
+        .navinner_select {
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            top: 120px;
+            left: 100px;
+        }
+
+        .navinner_select :first-child {
+            float: left;
+            width: 75px;
+            height: 25px;
+            border-bottom: 1px solid rgb(100, 79, 51);
+        }
+
+        .navinner_select :last-child {
+            float: left;
+            margin-top: 17px;
+            margin-left: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #999;
+        }
+
+        /*按钮装饰*/
+        .navinner_dcr {
+            position: absolute;
+            height: 400px;
+            top: 200px;
+        }
+
+        .navinner_dcr li {
+            width: 0;
+            height: 30px;
+            margin-top: 68px;
+            box-sizing: border-box;
+            border-top: 1px solid rgb(100, 79, 51);
+        }
+
+        /*按钮装饰动画*/
+        @keyframes navinner_dcr {
+            100% {
+                width: 100px;
+                border-top: 2px solid rgb(100, 79, 51);
+            }
+        }
+
+        @keyframes navinner_dcr2 {
+            100% {
+                width: 0;
+            }
+        }
+
+        .navinner_btn {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            top: 200px;
+            left: 100px;
+            vertical-align: top;
+            user-select: none;
+        }
+
+        .navinner_btn li {
+            margin-top: 40px;
+            font-size: 20px;
+            font-family: Garamond, serif;
+            font-size: 38px;
+            letter-spacing: 2.7px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        @keyframes navinner_move {
+            100% {
+                transform: translate(10px, 0);
+                color: #fff;
+            }
+        }
+
+        @keyframes navinner_move2 {
+            0% {
+                transform: translate(10px, 0);
+            }
+
+            100% {
+                transform: translate(0, 0);
+                color: #999;
+            }
+        }
+
+        .navinner_btn li :first-child {
+            font-size: 51px;
+        }
+
+        .navinner_epn {
+            position: absolute;
+            top: 200px;
+            left: 270px;
+        }
+
+        .navinner_epn li {
+            width: 100px;
+            height: 57.6px;
+            margin-top: 41px;
+            font-size: 16px;
+            line-height: 57.6px;
+            color: #ccc;
+            opacity: 0;
+        }
+
+        /* 释义动画 */
+        @keyframes navinner_explain {
+            100% {
+                opacity: 1;
+                transform: translateX(5px);
+            }
+        }
+
+        @keyframes navinner_explain2 {
+            100% {
+                opacity: 0;
+                transform: translateX(0);
+            }
+        }
+
+        .navinner_dcr3 {
+            position: absolute;
+            top: 100px;
+            right: 400px;
+            color: #fff;
+        }
+        .navinner_dcr3 span{
+            font-family: Garamond, serif;
+            font-size: 53px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 7.6px;
+        }
+        .navinner_dcr3 p{
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 内部导航 -->
+    <div class="navinner">
+        <div class="navinner_left">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div class="navinner_right">
+            <div class="navinner_dcr3">
+                <span>YOUR</span><br>
+                <span>SELECT</span>
+                <p>内容选择</p>
+            </div>
+            <div class="navinner_select">
+                <li></li>
+                <li>SELECT CONTENTS</li>
+            </div>
+            <div class="navinner_dcr">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+            <div class="navinner_btn">
+                <li><span>P</span><span>HOTO</span></li>
+                <li><span>V</span><span>IDEO</span></li>
+                <li><span>E</span><span>SSAY</span></li>
+                <li><span>A</span><span>BOUT</span></li>
+            </div>
+            <div class="navinner_epn">
+                <li>摄影</li>
+                <li>视频</li>
+                <li>文章</li>
+                <li>关于</li>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector(".navinner_btn");
+        var btns = btn.querySelectorAll("li");
+        var dcr = document.querySelector(".navinner_dcr");
+        var dcrs = dcr.querySelectorAll("li")
+        var epn = document.querySelector(".navinner_epn");
+        var epns = epn.querySelectorAll("li")
+        var img = document.querySelector(".navinner_left");
+        var imgs = img.querySelectorAll("li");
+
+        var num = 0;
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].setAttribute('index', i);
+            btns[i].onmouseover = function () {
+                var index = this.getAttribute('index');
+                var num1 = Number(index) + 1;
+                /*按钮装饰动画*/
+                dcrs[index].style.animation = "navinner_dcr 0.3s forwards";
+                btns[index].style.animation = "navinner_move 1s forwards";
+                epns[index].style.animation = "navinner_explain 0.9s forwards";
+                imgs[num].style.animation = "navinner_out 0.8s forwards";
+                imgs[num1].style.animation = "navinner_in 0.8s forwards";
+                num = num1;
+                console.log(num1);
+                /*图片切换动画*/
+            }
+            btns[i].onmouseout = function () {
+                var index = this.getAttribute('index');
+                dcrs[index].style.animation = "navinner_dcr2 1s forwards";
+                btns[index].style.animation = "navinner_move2 1s forwards";
+                epns[index].style.animation = "navinner_explain2 0.9s forwards";
+            }
+        }
+        /*
+        var num = 0;
+
+        btns[0].onmouseover = function(){
+            imgs[num].style.animation = "navinner_out 0.8s forwards";
+            imgs[1].style.animation = "navinner_in 0.8s forwards";
+            num = 1;
+        }
+        btns[1].onmouseover = function(){
+            imgs[num].style.animation = "navinner_out 0.8s forwards";
+            imgs[2].style.animation = "navinner_in 0.8s forwards";
+            num = 2;
+        }
+        btns[2].onmouseover = function(){
+            imgs[num].style.animation = "navinner_out 0.8s forwards";
+            imgs[3].style.animation = "navinner_in 0.8s forwards";
+            num = 3;
+        }
+        btns[3].onmouseover = function(){
+            imgs[num].style.animation = "navinner_out 0.8s forwards";
+            imgs[4].style.animation = "navinner_in 0.8s forwards";
+            num = 4;
+        }
+            btn.onmouseout = function(){
+                imgs[num].style.animation = "navinner_out 0.8s forwards";
+                imgs[0].style.animation = "navinner_in 0.8s forwards";
+                num =0;
+            }
+        */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/more.css">
+    <title>HORIZON MORE</title>
+</head>
+
+<body>
+    <div class="more">
+        <div class="left">
+            <div class="lef_box">
+                <div class="more_nav">
+                    <li><span><a href="#">Photo</a></span></li>
+                    <li><span><a href="#">Video</a></span></li>
+                    <li><span><a href="EASSY.html">Essay</a></span></li>
+                    <li><span><a href="ABOUT.html">About</a></span></li>
+                </div>
+                <div class="more_add">
+                    <p>By_ZhangLongSheng</p>
+                    <p>Tel.18553935554</p>
+                    <p>z504387026@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid_box">
+                <div class="img1"></div>
+            </div>
+            <div class="mid_box">
+                <div class="img2"></div>
+            </div>
+            <div class="mid_box">
+                <div class="img3"></div>
+            </div>
+            <div class="mid_box">
+                <div class="img4"></div>
+            </div>
+            <div class="mid_box">
+                <div class="img5"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="more_social">
+                <p><a href="#">Zhihu</a></p>
+                <p><a href="#">Weixin</a></p>
+                <p><a href="#">Weibo</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector(".more_nav");
+        var btns = btn.querySelectorAll("li");
+        var img = document.querySelector(".mid");
+        var imgs = img.querySelectorAll(".mid_box");
+
+        for(var i = 0; i<btns.length;i++){
+            btns[i].setAttribute("index",i);
+            btns[i].onmouseover = function(){
+                var index = this.getAttribute("index"); 
+                var num = Number(index)+1;
+                for(var j = 0; j < imgs.length; j++){
+                    imgs[j].style.display = "none";
+                }
+                imgs[num].style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
